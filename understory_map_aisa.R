@@ -252,7 +252,7 @@ library(betareg)
 
 source(file = "C:/Users/VincentMarkiet/OneDrive - Advian Oy/Tiedostot/Personal/Education/phd/backup_rscript/understory_reflectance/functions/error_bars_function.R", echo = FALSE)
 # loads error bar function to plot error bars for the following wavelengths: 552nm, 645nm, 682nm, 739nm, 820
-
+ 
 # references 
 
 # 1) Hernandez et al.2016 IEEE Trans. Geosci. Remote Sens. 2016, 54, 5105–5116.
