@@ -1,3 +1,5 @@
+# ------------------This Script calculates understory BRF as a function of fertility class based on an upsampled 10m Aisa image ----------------# 
+
 library(raster)
 library(sp)
 library(sf)
@@ -247,6 +249,15 @@ slf_df <- data.frame(slf_df,plots$ID) # add plot IDs to sunlit fraction datafram
 library(betareg)
 #library(gamlss)
 #library(reshape)
+
+source(file = "C:/Users/VincentMarkiet/OneDrive - Advian Oy/Tiedostot/Personal/Education/phd/backup_rscript/understory_reflectance/functions/error_bars_function.R", echo = FALSE)
+# loads error bar function to plot error bars for the following wavelengths: 552nm, 645nm, 682nm, 739nm, 820
+
+# references 
+
+# 1) Hernandez et al.2016 IEEE Trans. Geosci. Remote Sens. 2016, 54, 5105–5116.
+# 2) Knyazikhin, Y. et al., 2013. Proceedings of the National Academy of Sciences of the United States of America, 110(3), pp.E185-92.
+
 
 results_r2 <- data.frame() # create empty dataframe to store results
 
