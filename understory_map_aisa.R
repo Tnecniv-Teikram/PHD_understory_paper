@@ -605,3 +605,4 @@ for ( i_index in 1:length(indexlist)){
 
 
 
+# calculate RMSE for plots

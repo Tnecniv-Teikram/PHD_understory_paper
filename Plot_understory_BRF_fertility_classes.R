@@ -5,6 +5,7 @@
 # source('C:/Users/vmvincent/OneDrive/PhD/R_analysis/understory_reflectance/Extract_bright_canopy_pixels_for_can_albedo.R')  
 #source("c:/Users/vmvincent/OneDrive/PhD/R_analysis/understory_reflectance/import_aisa_data_for_understory_brf.R", echo = FALSE)
 #source("c:/Users/vmvincent/OneDrive/PhD/R_analysis/understory_reflectance/estimate_canopy_cover_Aisa_beta_regression.R",echo = FALSE)
+
 source("C:/Users/VincentMarkiet/OneDrive - Advian Oy/Tiedostot/Personal/Education/phd/backup_rscript/understory_reflectance/estimate_canopy_cover_Aisa_beta_regression.R")
 source("C:/Users/VincentMarkiet/Documents/Test_rscript/", echo = FALSE)
 source('C:/Users/vmvincent/OneDrive/PhD/R_analysis/understory_reflectance/functions/error_bars_function.R', echo=FALSE)
@@ -649,3 +650,6 @@ print.xtable(p_table, type="html", file="p_values_table.html")
 # create table with number of plots for each fertility class
 BRFu_plots_table <- as.table(c(length(plots_fert_1_index) , length(plots_fert_2_index) ,length(plots_fert_3_index), length(plots_fert_4_index), length(plots_fert_5_index ) ) )
 names(BRFu_plots_table) <- fert_class_list[1:5]
+
+
+# add understory pixel values to spatial dataframe
