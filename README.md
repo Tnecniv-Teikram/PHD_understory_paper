@@ -1,9 +1,10 @@
-# Phd script: forest understory reflectance algorithm for airborne hyperspectral remote sensing applications
+# Forest understory reflectance algorithm for airborne hyperspectral remote sensing applications
 
 
 ## This repository is used to store all scripts used for the understory PhD publications.
 
 The scripts are part of the following publications:
+
 
 '''
 1) Spectral Similarity and PRI Variations for a Boreal Forest Stand Using Multi-angular Airborne Imagery 
