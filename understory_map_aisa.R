@@ -466,10 +466,10 @@ for ( i_index in 1:length(indexlist)){
     
     # subset brightest 10% pixels to calculate leaf albedo spectrum
     
-    # 1.1) select plot using plot ID
-    plot_pixels <- brf[which(brf$ID == plots$ID[i_plot]),2:ncol(brf)]
+    # 1.1) select plot pixels using field plot ID
+    plot_pixels <- brf_all[which(brf_all$ID == plots$ID[i_plot]),2:ncol(brf_all)] # skip column 1 (ID column)
     
-    # 1.2) Calculate the mean of  brightest 10% pixels
+    # 1.2) Calculate the mean of brightest 10% pixels
     bright_TOC_mean <- colMeans(subset(plot_pixels, plot_pixels$Mosaic..Band.85...0.787090. >= quantile(plot_pixels$Mosaic..Band.85...0.787090., bright_treshold)))
     
     # correct for actual optical properties (bark etc). For this, retrieve p and rho, and invert the spectral invariant equation for leaf albedo for all wavelengths
@@ -489,10 +489,12 @@ for ( i_index in 1:length(indexlist)){
     # set sunlit fraction
     slf <- slf_df$sunlit_fraction[i_plot]
     
+    
     # 2) Calculate canopy gap fractions for sensor direction 
     
     Ti <- c(can_gaps1[i_plot], can_gaps2[i_plot], can_gaps3[i_plot],
             can_gaps4[i_plot], can_gaps5[i_plot]) # field measured canopy gap fraction 
+    
     
     
     # interpolate viewing angles of LAI-2000  to the solar zenith angle to get gap fraction at solar zenith angle
