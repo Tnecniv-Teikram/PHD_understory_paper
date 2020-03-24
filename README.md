@@ -15,3 +15,4 @@ Link to publication:https://www.mdpi.com/2072-4292/9/10/1005
 Currently under revision for journal of Remote sensing of Environment.
 
 
+Disclaimer: All scripts can be freely used, but it's appreciated to notify the author.
