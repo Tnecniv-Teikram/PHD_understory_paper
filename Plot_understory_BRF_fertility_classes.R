@@ -37,7 +37,7 @@ plots_fert_2_index <- which( plots$Kasvupaikka == 2 ) #&  c(plots$pine_fraction 
 plots_fert_3_index <- which( plots$Kasvupaikka == 3 ) #&  c(plots$pine_fraction > 0.9 | plots$spruce_fraction > 0.9 | plots$birch_fraction > 0.9)) 
 plots_fert_4_index <- which( plots$Kasvupaikka == 4 ) #&  c(plots$pine_fraction > 0.9 | plots$spruce_fraction > 0.9 | plots$birch_fraction > 0.9)) 
 plots_fert_5_index <- which( plots$Kasvupaikka == 5 ) #&  c(plots$pine_fraction > 0.9 | plots$spruce_fraction > 0.9 | plots$birch_fraction > 0.9)) 
-# plots_fert_6_index <- which( plots$Kasvupaikka == 6 ) #&  c(plots$pine_fraction > 0.9 | plots$spruce_fraction > 0.9 | plots$birch_fraction > 0.9)) 
+# plots_fert_6_index <- which( plots$Kasvupaikka == 6 ) #&  c(plots$pine_fraction > 0.9 | plots$spruce_fraction > 0.9 | plots$birch_fraction > 0.9)) # removed class ,"nutrient poor upland"  due to lack of field plot data for this fertility class
 
 # create list with subsetplot indices 
 indexlist <- list( plots_fert_1_index,  plots_fert_2_index,  plots_fert_3_index,  plots_fert_4_index, plots_fert_5_index ) # ,  plots_fert_6_index
