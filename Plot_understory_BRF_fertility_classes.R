@@ -997,3 +997,5 @@ multiplot(p_ndvi_can,p_ndvi_ru,p_ndvi_rc, cols = 3 )
 plots_c = plots # copy plots dataframe
 # recode all fertility classes to fertility class names
 plots_c = plots_c %>% mutate(fertility = recode(Kasvupaikka, '1' = 'herb-rich','2' = 'moderately-rich', '3' = 'moist-upland', '4' = 'dryish-upland', '5' = 'dry-upland', '6' = 'nutriend-poor-upland' ))
+# plot LAI boxplots for each fertility class
+ggplot( data = plots_c) + geom_boxplot(mapping = aes( x = fertility, y = plots_c$LAI, fill = fertility, shape = fertility)) + labs(x = 'fertility class', y = 'LAI') 
